@@ -93,6 +93,7 @@ export const getUserDataThunk = (username) => async (dispatch) => {
     dispatch(toggleIsFetching(false));
   } catch (error) {
     dispatch(setError(true));
+    dispatch(toggleIsFetching(false));
   }
 };
 

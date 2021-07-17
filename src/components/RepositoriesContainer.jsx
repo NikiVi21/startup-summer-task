@@ -6,7 +6,6 @@ import { getUserRepoThunk, setPage } from "../redux/repoReducer";
 
 class RepositoriesContainer extends React.Component {
   onPageChanged = (pageNumber) => {
-    console.log("AFAF");
     this.props.getUserRepoThunk(
       this.props.login,
       this.props.per_page,

@@ -1,9 +1,9 @@
-//import { useState } from "react";
 import style from "./Repositories.module.css";
 import ReactPaginate from "react-paginate";
 
 const Repositories = (props) => {
   let pagesCount = Math.ceil(props.totalRepoCount / props.per_page);
+
   let pageChangeForPaginate = (data) => {
     let selected = data.selected;
     props.onPageChanged(selected + 1);
