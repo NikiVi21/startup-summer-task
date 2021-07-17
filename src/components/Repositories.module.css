@@ -1,0 +1,96 @@
+.repositoriesWrapper {
+  width: 100%;
+  max-width: 55rem;
+}
+
+.repoContainer {
+  background: #ffffff;
+  border-radius: 6px;
+  max-width: 55rem;
+  margin-bottom: 24px;
+  min-height: 7rem;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0064eb;
+  margin-bottom: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.name a {
+  color: #0064eb;
+  text-decoration: none;
+}
+
+.description {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.paginator {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.selectedPage {
+  background: #0064eb;
+  border-radius: 3px;
+}
+
+.paginator ul {
+  padding: 0;
+}
+
+.pagination li {
+  margin-left: 16px;
+  width: 21px;
+  height: 25px;
+  display: inline-flex;
+}
+
+.pagination li a {
+  width: 21px;
+  height: 25px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

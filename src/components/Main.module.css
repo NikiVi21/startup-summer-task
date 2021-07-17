@@ -1,0 +1,74 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
+}
+
+.mainWrapper {
+  background: #e5e5e5;
+  display: flex;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  max-width: 1366px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .mainWrapper {
+    flex-wrap: wrap;
+  }
+}
+
+.startScreenWrapper {
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 655px;
+}
+
+.notFoundWrapper {
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 655px;
+}
+
+.emptyRepoWrapper {
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 655px;
+}
+
+.text {
+  width: 200px;
+  text-align: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
